@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personajes</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-4">
             Personajes Rick and Morty
         </h1>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img id="random-img" src="" class="card-img-top" />
+
+                    <div class="card-body">
+                        <h5 id="random-title" class="card-title">
+                        </h5>
+
+                        <p id="random-species">
+                        </p>
+
+                        <button class="btn btn-primary form-control" onclick="generar()">Generar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row" id="personajes">
         </div>
@@ -19,4 +39,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
